@@ -4,6 +4,7 @@
   mylib,
   myvars,
   inputs,
+  pkgs,
   ...
 }: let
   hostName = "thinkbook";
@@ -19,6 +20,11 @@ in {
   networking.hostName = hostName;
 
   modules.desktop.wm.niri.system.enable = true;
+
+  # 提供 home-manager CLI 命令
+  environment.systemPackages = [
+    inputs.home-manager.packages.${pkgs.system}.default
+  ];
 
   home-manager = {
     useGlobalPkgs = true;
