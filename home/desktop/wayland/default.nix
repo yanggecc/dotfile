@@ -5,6 +5,7 @@
 }: {
   imports = [
     ./niri
+    ./noctalia
     ./waybar
   ];
 
