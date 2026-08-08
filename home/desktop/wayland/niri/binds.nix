@@ -58,8 +58,8 @@
     "Mod+Shift+Alt+S".action.screenshot-window = {write-to-disk = true;};
     "Mod+Shift+S".action.screenshot = {show-pointer = false;};
 
-    "Mod+Return".action = spawn "${pkgs.ghostty}/bin/ghostty";
-    "Mod+D".action = spawn "${pkgs.noctalia}/bin/noctalia msg panel-toggle launcher";
+    "Mod+Return".action = spawn "${pkgs.kitty}/bin/kitty";
+    "Mod+D".action = spawn "${pkgs.anyrun}/bin/anyrun";
 
     # 窗口管理
     "Mod+Q".action = close-window;

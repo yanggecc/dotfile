@@ -6,6 +6,7 @@
   imports = [
     ./niri
     ./noctalia
+    ./anyrun
   ];
 
   home.packages = with pkgs; [
