@@ -59,7 +59,7 @@
     "Mod+Shift+S".action.screenshot = {show-pointer = false;};
 
     "Mod+Return".action = spawn "${pkgs.ghostty}/bin/ghostty";
-    "Mod+D".action = spawn "${pkgs.fuzzel}/bin/fuzzel";
+    "Mod+D".action = spawn "${pkgs.noctalia}/bin/noctalia msg panel-toggle launcher";
 
     # 窗口管理
     "Mod+Q".action = close-window;

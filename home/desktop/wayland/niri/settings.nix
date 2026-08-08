@@ -20,11 +20,6 @@ in {
     spawn-at-startup = [
       {
         command = [
-          "waybar"
-        ];
-      }
-      {
-        command = [
           "swww"
           "init"
         ];

@@ -6,7 +6,6 @@
   imports = [
     ./niri
     ./noctalia
-    ./waybar
   ];
 
   home.packages = with pkgs; [
@@ -18,7 +17,6 @@
     # utils
     wl-clipboard
     cliphist
-    fuzzel
     brightnessctl
     playerctl
     swww
