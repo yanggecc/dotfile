@@ -9,6 +9,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "input"
     ];
     shell = pkgs.fish;
     packages = with pkgs; []; #  thunderbird
