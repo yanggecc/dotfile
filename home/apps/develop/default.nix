@@ -5,7 +5,8 @@
 
     # ---- C/C++ 编译器 ----
     gcc
-    clang
+    # clang 编译器与 gcc 冲突（都提供 bin/ld.bfd），如需 clang 请用
+    # 方案：仅安装 gcc，clangd 等 IDE 工具由 clang-tools 提供
 
     # ---- 构建系统 ----
     cmake
