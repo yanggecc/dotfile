@@ -6,5 +6,6 @@
     ./productivity
     ./tools
     ./browsers
+    ./develop
   ];
 }

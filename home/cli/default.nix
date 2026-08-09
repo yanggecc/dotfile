@@ -14,5 +14,6 @@
     wget
     git
     lazygit
+    gh
   ];
 }
