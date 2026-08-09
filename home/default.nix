@@ -7,8 +7,7 @@
     ./desktop/wayland
     ./apps
     ./cli
-
-    ./anyrun.nix
+    ./editors
   ];
 
   home = {
