@@ -15,6 +15,10 @@
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs"; # 可选项，防止下载两份 nixpkgs（会禁用 cache）
     };
+    workx = {
+      url = "github:ygsheep/WorkX/develop";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs: import ./outputs inputs;

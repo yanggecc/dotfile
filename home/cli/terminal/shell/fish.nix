@@ -10,6 +10,7 @@
       grep = "rg";
       lg = "lazygit";
       v = "nvim";
+      yz = "yazi";
     };
     shellAbbrs = {
       gs = "git status";

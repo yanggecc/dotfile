@@ -1,8 +1,33 @@
 {pkgs, ...}: {
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot = {
+    initrd = {
+      systemd.enable = true;
+    };
 
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+    # Use latest kernel.
+    kernelPackages = pkgs.linuxPackages_latest;
+
+    consoleLogLevel = 3;
+    kernelParams = [
+      "quiet"
+      "systemd.show_status=auto"
+      "rd.udev.log_level=3"
+      "plymouth.use-simpledrm"
+    ];
+
+    loader = {
+      # systemd-boot on UEFI
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+      systemd-boot.graceful = true;
+      # 限制保留的启动项数量（自动清理旧 generations）
+      systemd-boot.configurationLimit = 10;
+    };
+
+    # 开机动画主题：bgrt 显示 UEFI 固件 Logo（ThinkBook/Lenovo）
+    plymouth = {
+      enable = true;
+      theme = "bgrt";
+    };
+  };
 }

@@ -15,5 +15,6 @@
     git
     lazygit
     gh
+    yazi
   ];
 }

@@ -12,4 +12,9 @@
       })
     ];
   };
+
+  environment.variables = {
+    GLFW_IM_MODULE = "ibus";
+    XMODIFIERS = "@im=fcitx";
+  };
 }

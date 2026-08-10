@@ -136,7 +136,29 @@
         "home-manager": "home-manager",
         "niri": "niri",
         "nixpkgs": "nixpkgs",
-        "noctalia": "noctalia"
+        "noctalia": "noctalia",
+        "workx": "workx"
+      }
+    },
+    "workx": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786358411,
+        "narHash": "sha256-/v/3ZuF3YR7pK3N7Tb7OCSkQqnHvhHkeJZgqDlGDju4=",
+        "owner": "ygsheep",
+        "repo": "WorkX",
+        "rev": "296eceef50cb47d49613254cc9d1470617dfc05e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ygsheep",
+        "ref": "develop",
+        "repo": "WorkX",
+        "type": "github"
       }
     },
     "xwayland-satellite-stable": {

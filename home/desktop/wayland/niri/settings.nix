@@ -18,7 +18,7 @@ in {
       _JAVA_AWT_WM_NONREPARENTING = "1";
 
       # Fcitx5 输入法环境变量（供 XWayland / Qt 应用识别输入法）
-      GTK_IM_MODULE = "fcitx";
+      GTK_IM_MODULE = "ibus";
       QT_IM_MODULE = "fcitx";
       XMODIFIERS = "@im=fcitx";
       INPUT_METHOD = "fcitx";
