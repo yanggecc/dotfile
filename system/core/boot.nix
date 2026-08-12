@@ -13,6 +13,7 @@
       "systemd.show_status=auto"
       "rd.udev.log_level=3"
       "plymouth.use-simpledrm"
+      "amdgpu.dcdebugmask=0x10"
     ];
 
     loader = {

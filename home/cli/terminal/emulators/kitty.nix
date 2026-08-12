@@ -28,7 +28,9 @@
     # Performance
     repaint_delay 10
     input_delay 3
-    sync_to_monitor yes
+    sync_to_monitor no
+
+    linux_display_server wayland
 
     # Bell
     enable_audio_bell no

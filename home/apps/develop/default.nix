@@ -36,6 +36,12 @@
     xz
     unzip
     gnutar
+
+    # Nodejs
+    nodejs
+
+    vscode
+    opencode
   ];
 
   # NixOS 上没有 /lib64/ld-linux-x86-64.so.2，强制 vcpkg 使用系统二进制，
