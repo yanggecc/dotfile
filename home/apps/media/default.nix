@@ -16,5 +16,6 @@
     (celluloid.override {youtubeSupport = true;})
     pamixer
     easyeffects
+    (import ./yesplaymusic-appimage.nix { inherit pkgs; })
   ];
 }
