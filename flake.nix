@@ -19,6 +19,10 @@
       url = "github:ygsheep/WorkX/develop";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    traecode = {
+      url = "path:/home/young/.dotfile/packages/traecode/TraeCode_CN-linux-x64.deb";
+      flake = false;
+    };
   };
 
   outputs = inputs: import ./outputs inputs;

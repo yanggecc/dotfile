@@ -137,7 +137,21 @@
         "niri": "niri",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
+        "traecode": "traecode",
         "workx": "workx"
+      }
+    },
+    "traecode": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786326198,
+        "narHash": "sha256-86XvyPksMVluFQppAvx4yYhZNVZton8re3PTfbQQSes=",
+        "path": "/home/young/.dotfile/packages/traecode/TraeCode_CN-linux-x64.deb",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/young/.dotfile/packages/traecode/TraeCode_CN-linux-x64.deb",
+        "type": "path"
       }
     },
     "workx": {
